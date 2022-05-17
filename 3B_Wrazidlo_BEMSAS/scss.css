@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  display: grid;
+  background-color: #633394;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 5px 100px 100px;
+  align-items: center;
+  justify-items: center;
+  color: white;
+}
+.head__subtitle {
+  display: block;
+  grid-column: 1;
+  grid-row: 1/2;
+  height: 100%;
+}
+.head__subtitle > p {
+  position: relative;
+  bottom: -50px;
+}
+.head__lane {
+  grid-column: 1;
+  grid-row: 2/3;
+  width: 200px;
+  height: 1px;
+  background-color: white;
+}
+.head__title {
+  grid-column: 1;
+  grid-row: 3/4;
+  display: block;
+  height: 100%;
+}
+.head__menu {
+  grid-column: 1;
+  grid-row: 4/-1;
+}
+.head__menu > ul > li {
+  display: inline-block;
+  padding: 10px;
+  height: 100%;
+}
+.head__menu > ul > li > a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+.head__menu > ul > li > a:hover {
+  border-bottom: 1px solid white;
+}
+
+.main {
+  background-color: #DEDEDE;
+  display: flex;
+  padding: 50px;
+  padding-top: 30px;
+  justify-content: center;
+}
+.main__art {
+  display: grid;
+  justify-items: center;
+  width: 80%;
+  max-width: 500px;
+  margin-right: 15px;
+  grid-row: 2/-1;
+  border-radius: 1em;
+  box-shadow: 0px 5px 8px 3px gray;
+}
+.main__art__img {
+  display: block;
+  height: 250px;
+  width: 100%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+.main__art__subtitle {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  margin-top: 30px;
+}
+.main__art__lane {
+  display: flex;
+  height: 2px;
+  background-color: gray;
+  width: 150px;
+}
+.main__art__title {
+  display: flex;
+  justify-content: center;
+}
+.main__art__text {
+  margin: 35px;
+  margin-top: 15px;
+  color: gray;
+}
+.main__art__box {
+  display: block;
+  border: 1px solid gray;
+  color: gray;
+  border-radius: 1em;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.main__art__box:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.main__art2 {
+  display: grid;
+  max-width: 500px;
+  justify-items: center;
+  width: 80%;
+  border-radius: 1em;
+  box-shadow: 0px 5px 8px 3px gray;
+}
+
+.foot {
+  padding-top: 20px;
+  display: grid;
+  justify-items: center;
+  background-image: url("rain.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.foot__text {
+  color: white;
+}
+.foot__lane {
+  display: block;
+  height: 1px;
+  width: 50%;
+  background-color: white;
+}
+.foot__credits {
+  color: white;
+  font-size: 20px;
+}/*# sourceMappingURL=scss.css.map */
